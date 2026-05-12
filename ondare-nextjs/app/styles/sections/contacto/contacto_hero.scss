@@ -1,0 +1,7 @@
+.contacto_hero {
+    ul {
+        li {
+            @extend .hover-opacity !optional;
+        }
+    }
+}

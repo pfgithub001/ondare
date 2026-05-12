@@ -1,0 +1,17 @@
+.text_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__body {
+        flex-grow: 1;
+        min-width: 70px;
+        height: 1px;
+        background-color: currentColor;
+        transform: translateX(3.8px) translateY(-0.5px);
+    }
+
+    &__head {
+        font-size: 12px;
+    }
+}

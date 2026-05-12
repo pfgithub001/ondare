@@ -1,0 +1,13 @@
+@use '../../styles/mixins/breakpoints' as bp;
+
+.section_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    h2 {
+        font-family: "Maison Neue", sans-serif;
+        font-weight: 400;
+    }
+}

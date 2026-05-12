@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Maison Neue";
+  src: url("../../typography/MaisonNeueMono.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; // recomendable para evitar FOUT
+}
+
+$tg-maison-neue: "Maison Neue", sans-serif;

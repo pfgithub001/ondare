@@ -1,0 +1,25 @@
+@use '../variables/colors';
+
+.login {
+    form {
+        background: colors.$color-blue-gradient-01;
+
+        .icon{
+            height: 30px;
+        }
+        .icon--facebook {
+            fill: white;
+            g {
+                fill: white;
+            }
+        }
+
+        button:hover {
+            .icon--facebook{
+                g {
+                    fill: colors.$color-blue-01;
+                }
+            }
+        }
+    }
+}

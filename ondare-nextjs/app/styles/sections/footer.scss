@@ -1,0 +1,16 @@
+@use '../variables/fonts';
+
+.footer {
+    h2{
+        font-size: 2rem
+    }
+    ul, h3 {
+        font-family: fonts.$tg-montserrat
+    }
+    .policies li {
+        padding: 2px 15px;
+    }
+    a{
+        @extend .hover-opacity !optional;
+    }
+}

@@ -1,0 +1,28 @@
+// VARIABLES
+@use 'styles/variables/fonts';
+@use 'styles/variables/colors';
+@use 'styles/variables/shadows';
+
+// MIXINS
+@use 'styles/mixins/breakpoints';
+
+// FLEX
+@use 'styles/flex/flex-4-2-1';
+@use 'styles/flex/flex-3-1';
+@use 'styles/flex/flex-2-1';
+
+
+body {
+    font-family: fonts.$tg-maison-neue;
+    background-color: colors.$color-white-01;
+}
+
+// HOVER
+.hover-opacity {
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.hover-opacity:hover {
+    opacity: 0.6;
+}
