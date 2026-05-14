@@ -1,5 +1,6 @@
-import FilteredScreenBackgroundImage from "../components/filtered_screen_background_image/filteredScreenBackgroundImage";
-import SvgLogo from "../svg/logo";
+import "./my.scss";
+import FilteredScreenBackgroundImage from "../../components/filtered_screen_background_image/filteredScreenBackgroundImage";
+import SvgLogo from "../../svg/logo";
 
 export default function Hero() {
   return ( 

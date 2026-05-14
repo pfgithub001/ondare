@@ -1,0 +1,10 @@
+@use '../../styles/mixins/breakpoints' as bp;
+@use '../../styles/variables/colors' as colors;
+
+.section.hero {
+    min-height: 100vh;
+
+    p, div{
+        color: colors.$color-white-01;
+    }
+}

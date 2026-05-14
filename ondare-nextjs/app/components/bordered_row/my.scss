@@ -1,0 +1,13 @@
+.bordered_row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        border-right: 1px solid black;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}

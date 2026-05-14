@@ -15,6 +15,7 @@
 body {
     font-family: fonts.$tg-maison-neue;
     background-color: colors.$color-white-01;
+    color: black
 }
 
 // HOVER
@@ -25,4 +26,11 @@ body {
 
 .hover-opacity:hover {
     opacity: 0.6;
+}
+
+// MARGINS
+
+.m_25_auto {
+    margin: 100px auto;
+    max-width: 80%;
 }

@@ -1,0 +1,5 @@
+@use '../../styles/mixins/breakpoints' as bp;
+
+.section.services {
+    min-height: 100vh;
+}

@@ -1,3 +1,5 @@
+import "./my.scss";
+
 export default function AboutHome() {
   return ( 
     <section className="section about_home relative"> 
