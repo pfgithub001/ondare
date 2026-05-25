@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input, textarea {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}

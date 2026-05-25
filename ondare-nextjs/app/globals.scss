@@ -4,7 +4,7 @@
 @use 'styles/variables/shadows';
 
 // MIXINS
-@use 'styles/mixins/breakpoints';
+@use 'styles/mixins/breakpoints' as bp;
 
 // FLEX
 @use 'styles/flex/flex-4-2-1';
@@ -33,4 +33,53 @@ body {
 .m_25_auto {
     margin: 100px auto;
     max-width: 80%;
+}
+
+// FORMS
+
+input, textarea {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+form {
+    button {
+       cursor: pointer;
+    }
+}
+
+// CONTA
+.inner-border-separation {
+    @extend .flex-4-2-1;
+    > * {
+        padding: 0 30px;
+        border-right: 1px black solid;
+    }
+    > *:last-child {
+        border-right: none;
+    }
+}
+
+@include bp.down("lg") {
+    .inner-border-separation {
+        > * {
+            padding: 30px 30px
+        }
+        :nth-child(2n) {
+            border-right: none;
+        }
+    }
+}
+
+@include bp.down("md") {
+    .inner-border-separation {
+        > * {
+            border: 0;
+        }
+    }
 }

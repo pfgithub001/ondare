@@ -1,9 +1,8 @@
-@use '../../styles/mixins/breakpoints' as bp;
+@use '../../../styles/mixins/breakpoints' as bp;
 
 .title_paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 
     h3 {
