@@ -1,0 +1,9 @@
+@use '../../../styles/mixins/breakpoints' as bp;
+
+.head_logo {
+    width: 130px;
+
+    svg .cls-1 {
+        fill: currentColor;
+    }
+}

@@ -12,23 +12,23 @@ export default function Services() {
           <div className="inner-border-separation mt-25">
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Suelo Pélvico" paragraph="Mediante la fisioterapia trataremos las patologías derivadas del mal funcionamiento del suelo pélvico: incontinencia urinaria, descenso de órganos pélvicos (prolapsos), dolor pélvico crónico, disfunciones sexuales y patología postparto." /></div>
-                <div className="h-10"></div>
-                <TextArrow text={"CONOCER MÁS"} width="200px" />
+                <div className="h-10"></div>                
+                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Suelo Pélvico" paragraph="Mediante la fisioterapia trataremos las patologías derivadas del mal funcionamiento del suelo pélvico: incontinencia urinaria, descenso de órganos pélvicos (prolapsos), dolor pélvico crónico, disfunciones sexuales y patología postparto." /></div>
                 <div className="h-10"></div>
-                <TextArrow text={"CONOCER MÁS"} width="200px" />
+                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Suelo Pélvico" paragraph="Mediante la fisioterapia trataremos las patologías derivadas del mal funcionamiento del suelo pélvico: incontinencia urinaria, descenso de órganos pélvicos (prolapsos), dolor pélvico crónico, disfunciones sexuales y patología postparto." /></div>
                 <div className="h-10"></div>
-                <TextArrow text={"CONOCER MÁS"} width="200px" />
+                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Suelo Pélvico" paragraph="Mediante la fisioterapia trataremos las patologías derivadas del mal funcionamiento del suelo pélvico: incontinencia urinaria, descenso de órganos pélvicos (prolapsos), dolor pélvico crónico, disfunciones sexuales y patología postparto." /></div>
                 <div className="h-10"></div>
-                <TextArrow text={"CONOCER MÁS"} width="200px" />
+                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
           </div>
         </div>       
