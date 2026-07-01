@@ -12,7 +12,7 @@ export default function TitleParagraph({ separation, title, paragraph }: TitlePa
   return (
     <div className="title_paragraph">
       <h3 className="text-5xl" style={{ marginBottom: separation }}>{title}</h3>
-      <p>{paragraph}</p>
+      <p style={{ whiteSpace: "pre-line" }}>{paragraph}</p>
     </div>
   );
 }

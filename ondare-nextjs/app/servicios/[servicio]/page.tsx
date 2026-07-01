@@ -1,7 +1,12 @@
 import SueloPelvico from "@/app/sections/suelo_pelvico/sueloPelvico";
+
 import HeadLogo from "../../components/generic/head_logo/headLogo";
 import Services from "@/app/sections/services/services";
 import BackgroundParagraph from "@/app/components/generic/background_paragraph/backgroundParagraph";
+import Fisioterapia from "@/app/sections/fisioterapia/fisioterapia";
+import Maternidad from "@/app/sections/maternidad/maternidad";
+import Postparto from "@/app/sections/postparto/postparto";
+import EntrenamientoMujer from "@/app/sections/entrenamiento_mujer/entrenamientoMujer";
 
 export default async function Servicios({ params }: { params: Promise<{ servicio: string }> }) {
   const { servicio } = await params;
@@ -13,6 +18,10 @@ export default async function Servicios({ params }: { params: Promise<{ servicio
         </div>
 
         {servicio === "suelo_pelvico" && <SueloPelvico />}
+        {servicio === "fisioterapia" && <Fisioterapia />}
+        {servicio === "maternidad" && <Maternidad />}
+        {servicio === "postparto" && <Postparto />}
+        {servicio === "entrenamiento_mujer" && <EntrenamientoMujer />}
 
         <Services />
         <BackgroundParagraph 

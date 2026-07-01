@@ -10,8 +10,9 @@
 
     @include bp.lg {
         flex-direction: row;
+        flex-wrap: wrap;
         > * {           
-            width: calc(100%/3);
+            width: calc((100% - 60px) / 3);
         }
     }
 }

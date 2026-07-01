@@ -2,4 +2,27 @@
 
 .section.services {
     min-height: 100vh;
+
+    .grid > * {
+        padding: 0 30px;
+        border-right: 1px solid black;
+
+        &:nth-child(3n) {
+            border-right: none;
+        }
+    }
+
+    @include bp.down("lg") {
+        .grid > * {
+            &:nth-child(2n) {
+                border-right: none;
+            }
+        }
+    }
+
+    @include bp.down("md") {
+        .grid > * {
+            border: none;
+        }
+    }
 }
