@@ -26,15 +26,6 @@ export default function Hero() {
             items-end
             ">
                 <SvgLogo />
-                <div
-                className="
-                w-fit
-                cursor-pointer
-                text-xl
-                hover-opacity
-                ">
-                    MENU
-                </div>
             </div>
             
             <div

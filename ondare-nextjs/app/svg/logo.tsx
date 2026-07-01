@@ -1,10 +1,12 @@
 import * as React from "react";
 import { JSX } from "react/jsx-runtime";
-const SvgLogo = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+const SvgLogo = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => {
+  const { className, ...rest } = props;
+  return (
   <svg
-   className="icon icon--logo" 
+   className={`icon icon--logo ${className || ""}`}
     viewBox="0 0 738.83 142.94"
-    {...props}
+    {...rest}
   >
     <defs>
       <style>{"\n      .cls-1 {\n        fill: #f8f7f3;\n      }\n    "}</style>
@@ -39,4 +41,5 @@ const SvgLogo = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>)
     </g>
   </svg>
 );
+};
 export default SvgLogo;
