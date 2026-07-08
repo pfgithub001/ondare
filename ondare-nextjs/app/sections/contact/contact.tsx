@@ -1,9 +1,11 @@
 import ContactEmail from "@/app/components/forms/contact_email/contactEmail";
 import "./my.scss";
+import AnimateInView from "@/app/components/generic/animate_in_view/animateInView";
 
 export default function Contact() {
   return (
     <section className="section contact relative">
+      <AnimateInView>
       <div 
       className="
       container m_25_auto
@@ -37,6 +39,7 @@ export default function Contact() {
           <ContactEmail />
         </div>     
       </div>
+      </AnimateInView>
     </section>
   );
 }

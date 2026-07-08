@@ -6,7 +6,6 @@
     .grid > * {
         padding: 0 30px;
         border-right: 1px solid black;
-
         &:nth-child(3n) {
             border-right: none;
         }

@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.6;
+    }
 
     &__body {
         flex-grow: 1;
@@ -9,9 +14,19 @@
         height: 1px;
         background-color: currentColor;
         transform: translateX(3.8px) translateY(-0.5px);
+        transition: transform 0.3s ease;
     }
 
     &__head {
         font-size: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover &__head {
+        transform: translateX(5px);
+    }
+
+    &:hover &__body {
+        transform: translateX(3.8px) translateY(-0.5px) scaleX(1.1);
     }
 }

@@ -36,6 +36,28 @@
     fill: #000 !important;
 }
 
+.myNavbar a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #333;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
 .hamburguer {
     width: 40px;
     height: 40px;

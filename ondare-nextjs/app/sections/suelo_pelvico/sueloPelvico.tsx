@@ -1,11 +1,13 @@
 import "./my.scss";
 import FilteredScreenBackgroundImage from "../../components/generic/filtered_screen_background_image/filteredScreenBackgroundImage";
 import TitleParagraph from "@/app/components/generic/title_paragraph/titleParagraph";
+import AnimateInView from "@/app/components/generic/animate_in_view/animateInView";
 
 export default function SueloPelvico() {
   return (
     <section className="section suelo_pelvico relative">
       <div className="container m_25_auto">
+        <AnimateInView>
         <div className="flex-2-1 items-center gap-y-5 lg:gap-y-0">
           <div className="pr-0 lg:pr-5">
             <TitleParagraph separation="100px" title="Suelo Pélvico" paragraph={`Comprender tu cuerpo para recuperar tu bienestar.
@@ -18,6 +20,8 @@ En ONDARE realizamos una valoración ecográfica y funcional completa para ident
             <FilteredScreenBackgroundImage imageSrc="/images/ONDARE_2.jpeg" opacity="0"/>
           </div>
         </div>
+        </AnimateInView>
+        <AnimateInView stagger={true}>
         <div className="flex-3-1 mt-50">
           <TitleParagraph separation="50px" title="Incontinencia Urinaria y Prolapsos" paragraph={`Tratamiento de las alteraciones relacionadas con la continencia urinaria y el soporte de los órganos pélvicos.
 
@@ -36,7 +40,7 @@ En ONDARE realizamos una valoración ecográfica y funcional completa para ident
 
 A partir de esta valoración diseñaremos un plan de tratamiento individualizado adaptado a tus necesidades.`} />
           <TitleParagraph separation="50px" title="Menopausia" paragraph={`Disfunciones asociadas a la menopausia.
-
+ 
 · Síndrome genitourinario de la menopausia
 · Sequedad vaginal
 · Molestias urinarias
@@ -44,6 +48,7 @@ A partir de esta valoración diseñaremos un plan de tratamiento individualizado
 · Prolapsos
 · Dolor durante las relaciones sexuales`} />
         </div>
+        </AnimateInView>
       </div>
     </section>
   );

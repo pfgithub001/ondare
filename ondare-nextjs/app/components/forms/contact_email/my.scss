@@ -1,3 +1,33 @@
 .contact_email {
 
 }
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(0,0,0,0.15);
+    border-left-color: #333;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    display: inline-block;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #666 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

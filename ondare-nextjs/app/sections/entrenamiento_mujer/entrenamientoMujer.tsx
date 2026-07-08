@@ -1,11 +1,13 @@
 import "./my.scss";
 import FilteredScreenBackgroundImage from "../../components/generic/filtered_screen_background_image/filteredScreenBackgroundImage";
 import TitleParagraph from "@/app/components/generic/title_paragraph/titleParagraph";
+import AnimateInView from "@/app/components/generic/animate_in_view/animateInView";
 
 export default function EntrenamientoMujer() {
   return (
     <section className="section entrenamiento_mujer relative">
       <div className="container m_25_auto">
+        <AnimateInView>
         <div className="flex-2-1 items-center gap-y-5 lg:gap-y-0">
           <div className="pr-0 lg:pr-5">
             <TitleParagraph separation="100px" title="Entrenamiento en la Mujer" paragraph={`Movimiento, fuerza y salud en cada etapa de tu vida.
@@ -18,6 +20,8 @@ Primero realizamos una valoración de abdomen y suelo pélvico para poder poner 
             <FilteredScreenBackgroundImage imageSrc="/images/ONDARE_2.jpeg" opacity="0"/>
           </div>
         </div>
+        </AnimateInView>
+        <AnimateInView stagger={true}>
         <div className="flex-3-1 mt-50">
           <TitleParagraph separation="50px" title="Preparación Física en el Embarazo" paragraph={`El ejercicio durante el embarazo aporta beneficios tanto para la madre como para el bebé.
 
@@ -30,6 +34,7 @@ Un programa diseñado para acompañarte tras el parto, recuperando fuerza, estab
 Nuestras sesiones están orientadas a mejorar la funcionalidad, prevenir lesiones y favorecer una mejor calidad de vida.`} />
           <TitleParagraph separation="50px" title="Entrenamiento Individualizado" paragraph="Programas adaptados a cada mujer y a sus objetivos. Si tienes dolor, si tienes un embarazo de riesgo, si no has entrenado nunca o simplemente quieres un entrenamiento más individualizado esta opción es para ti." />
         </div>
+        </AnimateInView>
       </div>
     </section>
   );

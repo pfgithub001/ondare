@@ -54,7 +54,11 @@ export default function ContactEmail() {
       <p className="text-red-600">{errorMsg}</p>
     )}
     <button type="submit" disabled={status === "loading"}>
-      <TextArrow text={status === "loading" ? "Enviando..." : "Enviar"} width="10px" />
+      {status === "loading" ? (
+        <div className="spinner" />
+      ) : (
+        <TextArrow text="Enviar" width="10px" />
+      )}
     </button>
   </form>
   );

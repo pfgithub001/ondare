@@ -3,10 +3,12 @@ import SectionTitle from "../../components/generic/section_title/sectionTitle";
 import Separator from "../../components/generic/separator/separator";
 import TextArrow from "../../components/generic/text_arrow/textArrow";
 import TitleParagraph from "../../components/generic/title_paragraph/titleParagraph";
+import AnimateInView from "../../components/generic/animate_in_view/animateInView";
 
 export default function WhatIsOndare() {
   return (
     <section className="section what_is_ondare relative">
+      <AnimateInView>
       <div className="container m_25_auto text-black">
         <SectionTitle title={"SABER MÁS"} />
         <Separator />
@@ -38,6 +40,7 @@ Además, contamos con un área especializada en el tratamiento de las disfuncion
         <div className="h-25"></div>
         <Separator />
       </div>
+      </AnimateInView>
     </section>
   );
 }

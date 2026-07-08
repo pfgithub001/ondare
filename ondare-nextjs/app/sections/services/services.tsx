@@ -3,12 +3,14 @@ import "./my.scss";
 import Separator from "@/app/components/generic/separator/separator";
 import SectionTitle from "@/app/components/generic/section_title/sectionTitle";
 import TextArrow from "@/app/components/generic/text_arrow/textArrow";
+import AnimateInView from "@/app/components/generic/animate_in_view/animateInView";
 
 export default function Services() {
   return ( 
     <section className="section services relative">
         <div className="container m_25_auto">
           <SectionTitle title={"SERVICIOS"} />
+          <AnimateInView stagger={true}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-25 gap-x-7.5 gap-y-7.5">
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Fisioterapia" paragraph="Tratamiento individualizado de lesiones musculoesqueléticas, dolor y alteraciones funcionales mediante terapia manual, ejercicio terapéutico y abordaje basado en la evidencia científica." /></div>
@@ -40,9 +42,10 @@ export default function Services() {
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Unidad oncología y drenaje linfático manual" paragraph="Acompañamiento especializado durante el tratamiento y recuperación oncológica mediante fisioterapia oncológica, drenaje linfático manual y ejercicio terapéutico adaptado a cada etapa del proceso." /></div>
                 <div className="h-10"></div>
                 <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
-              </div>
+            </div>
           </div>
-        </div>       
+           </AnimateInView>
+         </div>       
     </section>
   );
 }
