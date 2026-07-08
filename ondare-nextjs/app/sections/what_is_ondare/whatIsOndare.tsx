@@ -7,7 +7,7 @@ import AnimateInView from "../../components/generic/animate_in_view/animateInVie
 
 export default function WhatIsOndare() {
   return (
-    <section className="section what_is_ondare relative">
+    <section className="section what_is_ondare relative" id="que-es-ondare">
       <AnimateInView>
       <div className="container m_25_auto text-black">
         <SectionTitle title={"SABER MÁS"} />

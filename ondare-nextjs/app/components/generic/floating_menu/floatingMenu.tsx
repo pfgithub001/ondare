@@ -28,7 +28,7 @@ export default function FloatingMenu() {
         <ul className="text-lg">
           <li className="py-2"><Link href="/servicios/suelo_pelvico">Servicios</Link></li>
           <li className="py-2"><Link href="/sobre_ondare">Sobre Ondare</Link></li>
-          <li className="py-2"><a href="mailto:info@ondarefisioterapia.com">Contacto</a></li>
+          <li className="py-2"><a href="/contacto">Contacto</a></li>
         </ul>
         <div className="w-30 mt-5">
           <Link href="/"><SvgLogo className="w-full" /></Link>

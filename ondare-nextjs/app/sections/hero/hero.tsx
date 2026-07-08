@@ -1,3 +1,5 @@
+"use client";
+
 import "./my.scss";
 import FilteredScreenBackgroundImage from "../../components/generic/filtered_screen_background_image/filteredScreenBackgroundImage";
 import SvgLogo from "../../svg/logo";
@@ -37,7 +39,12 @@ export default function Hero() {
                 <p>
                     Centro especializado en Fisioterapia del suelo pélvico, preparación al parto y rehabilitación postparto en en barrio del antiguo, Donostia / San Sebastián
                 </p>
-                <a href="" 
+                <a 
+                href="/#que-es-ondare" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("que-es-ondare")?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="
                 hover-opacity
                 ">

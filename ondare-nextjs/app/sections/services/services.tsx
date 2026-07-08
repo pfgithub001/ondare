@@ -15,7 +15,7 @@ export default function Services() {
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Fisioterapia" paragraph="Tratamiento individualizado de lesiones musculoesqueléticas, dolor y alteraciones funcionales mediante terapia manual, ejercicio terapéutico y abordaje basado en la evidencia científica." /></div>
                 <div className="h-10"></div>                
-                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
+                <a href="/servicios/fisioterapia"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Unidad de suelo pélvico" paragraph={`Acompañamos tanto a mujeres como hombres a recuperar su salud íntima
@@ -31,17 +31,22 @@ export default function Services() {
               <div className="">
                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Unidad de maternidad" paragraph="Acompañamiento especializado durante el embarazo mediante valoración ecográfica, fisioterapia y ejercicio terapéutico adaptado a cada etapa de la gestación. Recuperación abdominal y del suelo pélvico tras el parto mediante valoración ecográfica, tratamiento individual y ejercicio terapéutico específico" /></div>
                 <div className="h-10"></div>
-                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
+                <a href="/servicios/maternidad"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
               </div>
-              <div className="">
-                <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Entrenamiento en la mujer" paragraph="Contamos con clases específicas para cada etapa de tu vida; embarazo, postparto, menopausia.  Fortalece tu cuerpo y mejora tu salud de forma consciente y segura. Primero realizamos una valoración de abdomen y suelo pélvico y así poder poner un punto de partida y ser más específicos en tu progresión." /></div>
-                <div className="h-10"></div>
-                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
-              </div>
-              <div className="">
-                <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Unidad oncología y drenaje linfático manual" paragraph="Acompañamiento especializado durante el tratamiento y recuperación oncológica mediante fisioterapia oncológica, drenaje linfático manual y ejercicio terapéutico adaptado a cada etapa del proceso." /></div>
-                <div className="h-10"></div>
-                <a href="/servicios/suelo_pelvico"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
+               <div className="">
+                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Postparto" paragraph="Recuperar tu cuerpo después del parto. En ONDARE te ayudamos a recuperar tu función abdominal y perineal, volver al ejercicio de forma segura y comprender los cambios que ha experimentado tu cuerpo para que recuperes confianza en cada etapa de tu recuperación." /></div>
+                 <div className="h-10"></div>
+                 <a href="/servicios/postparto"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
+               </div>
+               <div className="">
+                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Entrenamiento en la mujer" paragraph="Contamos con clases específicas para cada etapa de tu vida; embarazo, postparto, menopausia.  Fortalece tu cuerpo y mejora tu salud de forma consciente y segura. Primero realizamos una valoración de abdomen y suelo pélvico y así poder poner un punto de partida y ser más específicos en tu progresión." /></div>
+                 <div className="h-10"></div>
+                 <a href="/servicios/entrenamiento_mujer"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
+               </div>
+               <div className="">
+                 <div className="min-h-auto md:min-h-100 lg:min-h-150"><TitleParagraph separation="30px" title="Unidad oncología y drenaje linfático manual" paragraph="Acompañamiento especializado durante el tratamiento y recuperación oncológica mediante fisioterapia oncológica, drenaje linfático manual y ejercicio terapéutico adaptado a cada etapa del proceso." /></div>
+                 <div className="h-10"></div>
+                 <a href="/servicios/oncologia"><TextArrow text={"CONOCER MÁS"} width="200px" /></a>
             </div>
           </div>
            </AnimateInView>
