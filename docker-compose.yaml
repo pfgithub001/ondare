@@ -4,6 +4,8 @@ services:
       context: ondare-nextjs
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+    environment:
+      - PORT=${FRONTEND_PORT}
     env_file:
       - ondare-nextjs/.env
